@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif ;
+}
+/* you can use */
+.container{
+    background-color: black;
+    color: white;
+    padding: 2rem;
+    width: 40%;
+    margin: 2rem auto;
+    border-radius: 10px;   
+}
+.weather-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+input{
+    border: none;
+    background-color: white;
+    outline: none;
+    color: black;
+    padding: 0.5rem  2.5rem;
+    border-radius: 5px;
+}
+input::placeholder{
+    color: black;
+}
+.weather-search button{
+    font-size: 1rem;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.weather-search{
+    position: relative;
+}
+.weather-search{
+    position: absolute;
+    
+    font-size: 15px;
+    color: white;
+}
+.weather-body{
+    text-align: center;
+    margin-top: 3rem;
+}
+.weather-datetime{
+    margin-bottom: 2rem;
+    font-size: 14px;
+}
+.weather-forecast{
+    background-color: black;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+}
+.weather-icon img{
+    width: 100px;
+}
+.weather-temperature{
+    font-size: 1.75rem;
+}
+.weather-minmax {
+    display: flex;
+    justify-content: center;
+}
+.weather-minmax p{
+    font-size: 14px;
+    margin: 0.5rem;
+    margin-bottom: 3rem;
+}
+
+@media(max-width: 936px){
+    .container{
+        width: 90%;
+    }
+}
+.weather-hourly-weekly{
+    
+    background: gray;
+    padding: 25px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    
+}
+.weather-hourly{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 15px;
+}
+.weather-hourly .hour{
+    padding: 5px 10px;
+    background: #3C3C44;
+    border-radius: 50px;
+    text-align: center;
+}
+.weather-hourly .temp{
+    padding: 5px;
+}
+.weather-hourly .img{
+    padding: 15px;
+}
+@media only screen and (max-width:730px){
+    .weather-hourly-weekly{
+        justify-content: start;
+        align-items: none;
+        overflow-y: scroll;
+    }
+}
+@media screen and (min-width:731px){
+    .weather-hourly-weekly{
+        justify-content: start;
+        align-items: none;
+        overflow-y: scroll;
+    }
+}

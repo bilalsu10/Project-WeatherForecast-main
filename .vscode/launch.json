@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "ProjectforecastApplication",
+            "request": "launch",
+            "mainClass": "mfu.projectforecast.ProjectforecastApplication",
+            "projectName": "projectforecast"
+        },
+        {
+            "type": "java",
+            "name": "FrontendApplication",
+            "request": "launch",
+            "mainClass": "mfu.frontend.FrontendApplication",
+            "projectName": "frontend"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ProjectApplication<project>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "mfu.project.ProjectApplication",
+            "projectName": "project",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
